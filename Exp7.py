@@ -1,10 +1,10 @@
-
 import pandas as pd
 iris = pd.read_csv("C:/Users/pavan/Downloads/IRIS (1).csv")
 print(iris)
 import numpy as np
 
 #Multiple Linear Regression
+print("Multiple Linear Regression")
 x = iris[['SepalLengthCm', 'SepalWidthCm']]
 y = iris.PetalLengthCm
 from sklearn.model_selection import train_test_split
@@ -22,9 +22,10 @@ print("Mean Absoute Error: ", MAE)
 MSE = metrics.mean_squared_error(y_test, y_pred)
 print("Mean Squeared Error: ", MSE)
 RMSE = np.sqrt(metrics.mean_squared_error(y_test, y_pred))
-print("RMSE: ", RMSE)
+print("RMSE: ", RMSE ,"\n")
 
 #Simple Linear Regression
+print("Simple Linear Regression")
 x = iris[['SepalLengthCm']]
 y = iris.PetalLengthCm
 from sklearn.model_selection import train_test_split
@@ -43,3 +44,5 @@ MSE = metrics.mean_squared_error(y_test, y_pred)
 print("Mean Squeared Error: ", MSE)
 RMSE = np.sqrt(metrics.mean_squared_error(y_test, y_pred))
 print("RMSE: ", RMSE)
+
+

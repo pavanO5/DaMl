@@ -21,3 +21,5 @@ named_entity = []
 for ent in doc.ents:
     named_entity.append(ent.text)
 print(named_entity)
+
+

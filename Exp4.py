@@ -1,4 +1,3 @@
-# TF-IDF
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
@@ -19,3 +18,4 @@ for doc in documents:
 print(preprocessed)
 word_score = vector.fit_transform(preprocessed)
 print(word_score)
+

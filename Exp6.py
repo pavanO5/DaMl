@@ -1,4 +1,3 @@
-
 import pandas as pd
 iris = pd.read_csv("C:/Users/pavan/Downloads/IRIS (1).csv")
 print(iris)
@@ -15,3 +14,4 @@ LR = LinearRegression()
 training = LR.fit(x_train, y_train)
 y_pred = LR.predict(x_test)
 print(y_pred)
+

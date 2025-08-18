@@ -36,3 +36,5 @@ print("After Stemming:", stemmed_tokens)
 # POS Tagging
 pos_tags = pos_tag(tokens)
 print("POS Tags:", pos_tags)
+
+
